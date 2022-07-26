@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700;9..144,800;9..144,900&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:wght@500&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,400&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Rubik";
+    color: #00ffc4;
+    overflow: hidden;
+}
+
+ul {
+    list-style:none;
+}
+
+li{
+margin: 1.75rem 2rem auto 2rem;
+}
+
+#navBar {
+ height: 10vh;
+  width: 100vw;
+  position: fixed;
+  z-index: 2;
+ left: 0;
+  background-color: rgba(64, 64, 64, 0.648);
+  color: white;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#navList {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+body{
+   width: 100vw;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+#about {
+    align-self: center;
+    margin-top: 7rem;
+    font-size: 5rem;
+}
+
+span {
+    opacity: 0;
+    transition: 1s;
+    transform: translateY(100px);
+    display: inline-block;
+}
+
+span:hover{
+    cursor: pointer;
+    font-size: 70px;
+}
+
+span.fade {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.info{
+    margin-left: 8rem;
+    margin-right: 8rem;
+    text-indent: 50px;
+    line-height: 30px;
+    margin-top: 1rem;
+}
+
+.homeLink , .aboutLink , .blogLink, .projectsLink, .resumeLink{
+    transition: 1s;
+}
+
+
+.home:hover .homeLink{
+    font-size: 25px;
+}
+
+.about:hover .aboutLink {
+    font-size: 25px;
+}
+
+.blog:hover .blogLink {
+    font-size: 25px; 
+}
+
+.projects:hover .projectsLink {
+    font-size: 25px; 
+}
+
+.resume:hover .resumeLink {
+    font-size: 25px; 
+}
+
+#abtCont{
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 2s;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+

@@ -1,0 +1,222 @@
+
+body{
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: black;
+}
+
+#game-board {
+    background-color: #CCC;
+    width: 100vmin;
+    height: 100vmin;
+    display: grid;
+    grid-template-columns: repeat(21,1fr);
+    grid-template-rows: repeat(21,1fr) ;
+    position: absolute;
+    border-radius: 5px;
+}
+
+.snake {
+    background-color: hsl(200,100%,50%);
+  
+    
+}
+.food{
+    background-color: hsl(50, 100%, 50%);
+  
+    border-radius: 50%;
+}
+
+#settings {
+    display: flex;
+    flex-direction: column;
+    border: solid 10px red;
+    background-color: black;
+    width: 20em;
+    position: relative;
+    z-index: 1;
+    margin: auto;
+    border-radius: 30px;
+    
+}
+.difficultyLabels {
+    color: white;
+    margin-left:5.5em;
+    font-size: 20px;
+}
+
+.dropbtn {
+    background-color: rgb(0, 255, 0);
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    margin: 1em auto 0 auto;
+    border: none;
+    width: 15vmin;
+    border-radius: 30px;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    margin: auto;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    
+  }
+
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  #startBtn {
+    width: 30%;
+    margin: 2em auto 1em auto;
+    height: 3em;
+    border-radius: 20px;
+    width: 40%;
+    background-color: red;
+    color: white;
+
+  }
+
+  #settingsHeader{
+    font-family: "GameFont";
+    font-size: 50px;
+    color: white;
+    width: auto;
+    margin: auto;
+  }
+
+  #highContrast{
+    color: #F2CA19;
+    background-color: black;
+    border: solid 1px #E11845 ;
+  }
+
+#Monochromatic{
+  color: #BBDFFA ;
+  background-color: #445BC1 ; 
+  border: solid 1px #1727AE ;
+}
+
+#Complementary{
+  color: #FC7307;
+  background-color: #341C09;
+  border: solid 1px #D4E4F7;
+}
+
+#Tetradic{
+  color: #6768e1 ;
+  background-color: #e3e26a ;
+  border: solid 1px #f26379 ;
+}
+
+.colorSelection:hover {
+cursor: pointer;
+}
+
+.colorSelection {
+padding: 1em;
+}
+
+
+.alertMessage{
+  width: 50vmin;
+  height: 25vmin;
+  background-color: black;
+  text-align: center;
+  justify-content: center;
+  border-radius: 40px;
+  z-index: 1;
+}
+
+.ok{
+width: 15vmin;
+height: 5vmin;
+border-radius: 20px;
+width: 40%;
+background-color: red;
+color: white;
+position: relative;
+top: 15vmin;
+
+}
+
+.message{
+  color: white;
+  font-size: 25px;
+}
+
+.alertMessage2{
+  width: 50vmin;
+  height: 60vmin;
+  background-color: black;
+  text-align: center;
+  justify-content: center;
+  border-radius: 40px;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.ok2{
+  width: 25vmin;
+  height: 5vmin;
+  border-radius: 20px;
+  width: 40%;
+  background-color: red;
+  color: white;
+  position: relative;
+  top: 50vmin;
+  }
+
+  .message2{
+    color: white;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    
+   
+  }
+
+  .img{
+    width: 250px;
+    height: auto;
+    
+   
+  }
+
+  .bigBtn {
+    width: 25vmin;
+  }
+  .bigBtn2{
+    width: 25vmin;
+  }
+
+  .btnDiv{
+    display: flex;
+    margin-right: -6.15em;
+  }
+
+  .imgDiv {
+    display: flex;
+    z-index: 4;
+  }

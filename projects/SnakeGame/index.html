@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake</title>
+    <script src="game.js" defer type="module"></script>
+    <script src="settings.js" defer type="module"></script>
+    <link rel="stylesheet" href="styles.css">
+
+ 
+
+</head>
+<body>
+    <div id="settings">
+        <h1 id="settingsHeader">Settings</h1>
+        <label for="radio-btn" class="difficultyLabels" id="easyLabel">
+            <input type="radio" name ="difficulty" class="diff" id="easy">Easy
+        </label>
+        <label for="radio-btn" class="difficultyLabels" id="mediumLabel">
+            <input type="radio" name ="difficulty" class="diff"  id="medium">Medium
+        </label>
+        <label for="radio-btn" class="difficultyLabels" id="hardLabel">
+            <input type="radio" name ="difficulty" class="diff" id="hard">Hard
+        </label>
+        <label for="radio-btn" class="difficultyLabels" id="sico-modeLabel">
+            <input type="radio" name ="difficulty" class="diff" id="sico-mode">Sicko Mode
+        </label>
+
+        <div class="dropdown">
+            <button class="dropbtn">Colors</button>
+            <div class="dropdown-content">
+              <div  id="highContrast" class="colorSelection">High Contrast</div>
+              <div id="Monochromatic" class="colorSelection">Monochromatic</div>
+              <div  id="Complementary" class="colorSelection">Complementary</div>
+              <div  id="Tetradic" class="colorSelection">Tetradic</div>
+            </div>
+          </div>
+        
+<button id="startBtn">Start!</button>
+    </div>
+    <div id="game-board"></div>
+</body>
+</html>
